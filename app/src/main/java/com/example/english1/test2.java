@@ -14,7 +14,7 @@ public class test2 extends AppCompatActivity implements View.OnClickListener {
 
     EditText er2;
 
-    DBHelper2 dbHelper;
+    DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class test2 extends AppCompatActivity implements View.OnClickListener {
 
         Button btn2 = findViewById(R.id.btn2);
         btn2.setOnClickListener(this);
-        dbHelper = new DBHelper2(this);
+        dbHelper = new DBHelper(this);
 
 
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -47,9 +47,9 @@ public class test2 extends AppCompatActivity implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.btn2:
-                contentValues.put(DBHelper2.KEY_CA, er);
+                contentValues.put(DBHelper.KEY_CA, er);
 
-                database.insert(DBHelper2.TABLE_CONTACTS, null, contentValues);
+                database.insert(DBHelper.TABLE_CONTACTS, null, contentValues);
                 break;
         }
         dbHelper.close();

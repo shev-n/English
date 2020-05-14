@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DBHelper2 extends SQLiteOpenHelper{
+public class DBHelper extends SQLiteOpenHelper{
 
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "test2";
@@ -15,7 +15,7 @@ public class DBHelper2 extends SQLiteOpenHelper{
     public static final String KEY_CA = "ca";
     public static final String KEY_ER = "er";
 
-    public DBHelper2(Context context) {
+    public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
