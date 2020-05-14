@@ -2,31 +2,24 @@ package com.example.english1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentValues;
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class test2 extends AppCompatActivity implements View.OnClickListener {
-
-    EditText er2;
-
-    DBHelper dbHelper;
+public class test2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
+        EditText er = (EditText) findViewById(R.id.er2);
+        DBHelper dbHelper = new DBHelper(this);
 
-        Button btn2 = findViewById(R.id.btn2);
-        btn2.setOnClickListener(this);
-        dbHelper = new DBHelper(this);
-
-
-        btn2.setOnClickListener(new View.OnClickListener() {
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2);
+        b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -34,25 +27,6 @@ public class test2 extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent);
             }
         });
-
-    }
-
-    @Override
-    public void onClick(View v) {
-
-        String er = er2.getText().toString();
-
-        SQLiteDatabase database = dbHelper.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        switch (v.getId()) {
-
-            case R.id.btn2:
-                contentValues.put(DBHelper.KEY_CA, er);
-
-                database.insert(DBHelper.TABLE_CONTACTS, null, contentValues);
-                break;
-        }
         dbHelper.close();
     }
-    }
-
+}

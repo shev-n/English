@@ -12,8 +12,8 @@ public class DBHelper extends SQLiteOpenHelper{
     public static final String TABLE_CONTACTS = "contacts";
 
     public static final String KEY_ID = "_id";
+    public static final String KEY_QUESTION = "QUESTION";
     public static final String KEY_CA = "ca";
-    public static final String KEY_ER = "er";
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -22,7 +22,7 @@ public class DBHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + TABLE_CONTACTS + "(" + KEY_ID
-                + " integer primary key," + KEY_CA + " text," + KEY_ER + " text" + ")");
+                + " integer primary key," + KEY_QUESTION + " text," + KEY_CA + " text" + ")");
 
     }
 
