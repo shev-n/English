@@ -24,7 +24,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="250px"
+            android:layout_width="158dp"
             android:layout_height="114dp"
             android:layout_weight="1"
             android:background="#87CEB1"
@@ -54,7 +54,7 @@
                 app:srcCompat="@drawable/png_line_2" />
 
             <EditText
-                android:id="@+id/test2"
+                android:id="@+id/er2"
                 android:layout_width="match_parent"
                 android:layout_height="141dp"
                 android:background="#FFE7BD"
@@ -72,7 +72,7 @@
                 app:srcCompat="@drawable/png_line_2" />
 
             <Button
-                android:id="@+id/btn"
+                android:id="@+id/btn2"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:background="#B6B2B2"
