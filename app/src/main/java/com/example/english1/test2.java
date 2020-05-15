@@ -15,8 +15,6 @@ public class test2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
-        EditText er = (EditText) findViewById(R.id.er2);
-        DBHelper dbHelper = new DBHelper(this);
 
         @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2);
         b1.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +25,5 @@ public class test2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        dbHelper.close();
     }
 }
