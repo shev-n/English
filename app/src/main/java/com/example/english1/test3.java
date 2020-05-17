@@ -10,6 +10,8 @@ import android.widget.Button;
 
 public class test3 extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class test3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), result.class);
+
                 startActivity(intent);
             }
         });
@@ -33,6 +36,7 @@ public class test3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), result.class);
+
                 startActivity(intent);
             }
         });
@@ -42,6 +46,7 @@ public class test3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), result.class);
+
                 startActivity(intent);
             }
         });

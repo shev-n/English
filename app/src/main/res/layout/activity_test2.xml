@@ -23,7 +23,7 @@
         android:background="#87CEB1">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/test2"
             android:layout_width="158dp"
             android:layout_height="114dp"
             android:layout_weight="1"
@@ -84,6 +84,7 @@
                 android:layout_height="4dp"
                 android:background="#000000"
                 app:srcCompat="@drawable/png_line_2" />
+
 
             <ImageView
                 android:id="@+id/imageView6"
