@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class test2 extends AppCompatActivity {
+public class test2v2 extends AppCompatActivity {
 
     EditText ER;
     DBHelper dbHelper;
@@ -24,17 +24,16 @@ public class test2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test2);
-        ER = findViewById(R.id.er2);
+        setContentView(R.layout.activity_test2v2);
+        ER = findViewById(R.id.er2v2);
         final String response = ER.getText().toString();
         dbHelper = new DBHelper(this);
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(DBHelper.KEY_QUESTION, "C_MP_TER");
-        contentValues.put(DBHelper.KEY_CA, "computer");
+        contentValues.put(DBHelper.KEY_QUESTION, "_NG_N_ER");
+        contentValues.put(DBHelper.KEY_CA, "engineer");
 
-
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2);
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2v2);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -42,7 +41,7 @@ public class test2 extends AppCompatActivity {
 
                 if(response.equals(DBHelper.KEY_CA)){
 
-                   points = points+1;
+                    points = points+1;
 
                 }else{
                     points = points+0;

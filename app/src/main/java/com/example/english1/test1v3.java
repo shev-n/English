@@ -1,6 +1,7 @@
 package com.example.english1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,41 +16,41 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class test2 extends AppCompatActivity {
 
-    EditText ER;
+public class test1v3 extends AppCompatActivity {
+
+    String ca = "";
+    String response = "";
+    int points = 0;
+
     DBHelper dbHelper;
-    int points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test2);
-        ER = findViewById(R.id.er2);
-        final String response = ER.getText().toString();
-        dbHelper = new DBHelper(this);
-        ContentValues contentValues = new ContentValues();
+        setContentView(R.layout.activity_test1);
 
-        contentValues.put(DBHelper.KEY_QUESTION, "C_MP_TER");
-        contentValues.put(DBHelper.KEY_CA, "computer");
-
-
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2);
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.yes1v3);
+        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.no1v3);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
-                if(response.equals(DBHelper.KEY_CA)){
-
-                   points = points+1;
-
-                }else{
-                    points = points+0;
-                }
-                Intent intent = new Intent(getApplicationContext(), test3.class);
+                    points = points+1;
+                Intent intent = new Intent(getApplicationContext(), test2.class);
                 startActivity(intent);
             }
         });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), test2.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

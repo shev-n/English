@@ -9,18 +9,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class test3 extends AppCompatActivity {
+public class test3v2 extends AppCompatActivity {
 
+    String response = "";
     int points;
+    DBHelper dbHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test3);
+        setContentView(R.layout.activity_test3v2);
 
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.cow1);
-        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.chicken1);
-        @SuppressLint("WrongViewCast") Button b3 = findViewById(R.id.pig1);
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.hipp1);
+        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.crocodile1);
+        @SuppressLint("WrongViewCast") Button b3 = findViewById(R.id.elephant1);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -35,7 +38,6 @@ public class test3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                points=points+1;
                 Intent intent = new Intent(getApplicationContext(), result.class);
 
                 startActivity(intent);
@@ -46,6 +48,8 @@ public class test3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                points=points+1;
+
                 Intent intent = new Intent(getApplicationContext(), result.class);
 
                 startActivity(intent);

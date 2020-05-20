@@ -19,7 +19,6 @@ import android.widget.TextView;
 
 public class test1 extends AppCompatActivity {
 
-   String response = "";
    int points = 0;
 
     DBHelper dbHelper;
@@ -28,13 +27,6 @@ public class test1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test1);
-        dbHelper = new DBHelper(this);
-        ContentValues contentValues = new ContentValues();
-
-        contentValues.put(DBHelper.KEY_QUESTION, "'Roof' переводится как 'Крыша'?");
-        contentValues.put(DBHelper.KEY_CA, "yes");
-
-
 
         @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.yes);
         @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.no);
@@ -42,13 +34,8 @@ public class test1 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                response = "yes";
-                if(response == DBHelper.KEY_CA){
                     points = points+1;
-                }
-
                 Intent intent = new Intent(getApplicationContext(), test2.class);
-                intent.putExtra("points1", points);
                 startActivity(intent);
             }
         });
@@ -59,7 +46,6 @@ public class test1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), test2.class);
-                intent.putExtra("points1", points);
                 startActivity(intent);
             }
         });

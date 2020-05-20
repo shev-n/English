@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.app.Dialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,5 +36,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //Подключение диалогового окна
+        final Dialog dialog = new Dialog(MainActivity.this);
+        dialog.setContentView(R.layout.acrivity_dialog);
+        Button buttonDialog = (Button) dialog.findViewById(R.id.buttonDialog);
+        buttonDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.setCancelable(false);
+        dialog.setTitle("Запомни!");
+        dialog.show();
+
     }
 }

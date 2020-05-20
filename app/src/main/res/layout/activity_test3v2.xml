@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#87CEB1"
     android:orientation="vertical"
-    tools:context=".test3">
+    tools:context=".test3v2">
 
 
     <LinearLayout
@@ -24,7 +24,7 @@
             android:background="#FFE7BD"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
-            android:text="CHICKEN"
+            android:text="ELEPHANT"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="60sp" />
@@ -61,18 +61,18 @@
             android:background="#000000">
 
             <Button
-                android:id="@+id/cow1"
+                android:id="@+id/hipp1"
                 android:layout_width="190dp"
                 android:layout_height="match_parent"
                 android:text="Ответить"
                 android:background="#CDB996" />
 
             <ImageView
-                android:id="@+id/cow"
+                android:id="@+id/hipp"
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:background="#87CEB1"
-                app:srcCompat="@drawable/cow" />
+                app:srcCompat="@drawable/hipp" />
 
         </LinearLayout>
 
@@ -88,18 +88,18 @@
             android:layout_height="221dp">
 
             <Button
-                android:id="@+id/chicken1"
+                android:id="@+id/crocodile1"
                 android:layout_width="190dp"
                 android:layout_height="match_parent"
                 android:background="#CDB996"
                 android:text="Ответить" />
 
             <ImageView
-                android:id="@+id/chicken"
+                android:id="@+id/crocodile"
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:background="#87CEB1"
-                app:srcCompat="@drawable/chicken" />
+                app:srcCompat="@drawable/crocodile" />
 
         </LinearLayout>
 
@@ -117,17 +117,17 @@
             android:layout_width="match_parent"
             android:layout_height="221dp">
             <Button
-                android:id="@+id/pig1"
+                android:id="@+id/elephant1"
                 android:layout_width="190dp"
                 android:layout_height="match_parent"
                 android:background="#CDB996"
                 android:text="Ответить" />
             <ImageView
-                android:id="@+id/pig"
+                android:id="@+id/elephant"
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:background="#87CEB1"
-                app:srcCompat="@drawable/pig" />
+                app:srcCompat="@drawable/elephant" />
 
         </LinearLayout>
 

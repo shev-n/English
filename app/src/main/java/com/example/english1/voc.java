@@ -15,16 +15,5 @@ public class voc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voc);
 
-
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.forward);
-        b1.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), voc1.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }
