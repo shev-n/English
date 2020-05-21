@@ -19,7 +19,6 @@ import java.util.Random;
 
 public class test2 extends AppCompatActivity {
 
-    EditText ER;
     String ca = "computer";
     int min = 0;
     int max = 3;
@@ -37,16 +36,14 @@ public class test2 extends AppCompatActivity {
         }
 
         final Bundle key = getIntent().getExtras();
-        EditText ER = findViewById(R.id.er2);
-        final String response = ER.getText().toString().trim();
-
-
 
         @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                EditText ER = findViewById(R.id.er2);
+                String response = ER.getText().toString().trim();
                 int points = key.getInt("points1");
                 if(response.equals(ca)){
                    points = points+1;

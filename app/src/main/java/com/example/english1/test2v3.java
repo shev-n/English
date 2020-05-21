@@ -45,6 +45,8 @@ public class test2v3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                EditText ER = findViewById(R.id.er2v3);
+                String response = ER.getText().toString().trim();
                 int points = key.getInt("points1");
                 if(response.equals(ca)){
                     points = points+1;
