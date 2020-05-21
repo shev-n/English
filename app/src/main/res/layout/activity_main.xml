@@ -23,6 +23,7 @@
             android:layout_height="193dp"
             android:layout_weight="1"
             android:background="#87CEB1"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/menu" />
 
 

@@ -92,6 +92,7 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:baselineAligned="false"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/bathroom" />
 
     </LinearLayout>

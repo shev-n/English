@@ -7,4 +7,5 @@
     android:background="#87CEB1"
     android:orientation="vertical"
     tools:context=".result">
+
 </LinearLayout>

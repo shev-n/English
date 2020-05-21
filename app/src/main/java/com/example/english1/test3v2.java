@@ -11,15 +11,12 @@ import android.widget.Button;
 
 public class test3v2 extends AppCompatActivity {
 
-    String response = "";
-    int points;
-    DBHelper dbHelper;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test3v2);
+        final Bundle key = getIntent().getExtras();
 
         @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.hipp1);
         @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.crocodile1);
@@ -28,8 +25,9 @@ public class test3v2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int points = key.getInt("points2");
                 Intent intent = new Intent(getApplicationContext(), result.class);
-
+                intent.putExtra("points3", points);
                 startActivity(intent);
             }
         });
@@ -38,8 +36,9 @@ public class test3v2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int points = key.getInt("points2");
                 Intent intent = new Intent(getApplicationContext(), result.class);
-
+                intent.putExtra("points3", points);
                 startActivity(intent);
             }
         });
@@ -48,10 +47,10 @@ public class test3v2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int points = key.getInt("points2");
                 points=points+1;
-
                 Intent intent = new Intent(getApplicationContext(), result.class);
-
+                intent.putExtra("points3", points);
                 startActivity(intent);
             }
         });

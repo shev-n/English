@@ -9,17 +9,29 @@ import android.view.View;
 import android.content.ContentValues;
 import android.widget.Button;
 
+import java.util.Random;
+
 
 public class test1v2 extends AppCompatActivity {
 
     int points = 0;
+    int min = 0;
+    int max = 3;
+    int diff = max - min;
+    Random random = new Random();
+    int activity = random.nextInt(diff + 1);
 
-    DBHelper dbHelper;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test1v2);
+
+        if(activity == 0){
+            activity = activity + 1;
+        }
 
         @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.yes1v2);
         @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.no1v2);
@@ -27,8 +39,19 @@ public class test1v2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), test2.class);
-                startActivity(intent);
+                if(activity == 1){
+                    Intent intent = new Intent(getApplicationContext(), test2.class);
+                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }else if (activity == 2){
+                    Intent intent = new Intent(getApplicationContext(), test2v2.class);
+                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }else if (activity == 3){
+                    Intent intent = new Intent(getApplicationContext(), test2v3.class);
+                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -37,8 +60,19 @@ public class test1v2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                     points = points+1;
-                Intent intent = new Intent(getApplicationContext(), test2.class);
-                startActivity(intent);
+                if(activity == 1){
+                    Intent intent = new Intent(getApplicationContext(), test2.class);
+                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }else if (activity == 2){
+                    Intent intent = new Intent(getApplicationContext(), test2v2.class);
+                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }else if (activity == 3){
+                    Intent intent = new Intent(getApplicationContext(), test2v3.class);
+                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }
             }
         });
 

@@ -11,12 +11,12 @@ import android.widget.Button;
 
 public class test3 extends AppCompatActivity {
 
-    int points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test3);
+        final Bundle key = getIntent().getExtras();
 
         @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.cow1);
         @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.chicken1);
@@ -25,8 +25,9 @@ public class test3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int points = key.getInt("points2");
                 Intent intent = new Intent(getApplicationContext(), result.class);
-
+                intent.putExtra("points3", points);
                 startActivity(intent);
             }
         });
@@ -35,9 +36,11 @@ public class test3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int points = key.getInt("points2");
                 points=points+1;
+                System.out.println(points);
                 Intent intent = new Intent(getApplicationContext(), result.class);
-
+                intent.putExtra("points3", points);
                 startActivity(intent);
             }
         });
@@ -46,8 +49,9 @@ public class test3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int points = key.getInt("points2");
                 Intent intent = new Intent(getApplicationContext(), result.class);
-
+                intent.putExtra("points3", points);
                 startActivity(intent);
             }
         });

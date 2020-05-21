@@ -72,6 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:background="#87CEB1"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/cow" />
 
         </LinearLayout>
@@ -99,6 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:background="#87CEB1"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/chicken" />
 
         </LinearLayout>
@@ -122,11 +124,13 @@
                 android:layout_height="match_parent"
                 android:background="#CDB996"
                 android:text="Ответить" />
+
             <ImageView
                 android:id="@+id/pig"
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:background="#87CEB1"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/pig" />
 
         </LinearLayout>
