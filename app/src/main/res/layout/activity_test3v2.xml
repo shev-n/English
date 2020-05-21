@@ -64,8 +64,8 @@
                 android:id="@+id/hipp1"
                 android:layout_width="190dp"
                 android:layout_height="match_parent"
-                android:text="Ответить"
-                android:background="#CDB996" />
+                android:background="#CDB996"
+                android:text="Ответить" />
 
             <ImageView
                 android:id="@+id/hipp"
@@ -102,7 +102,6 @@
                 android:background="#87CEB1"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/crocodile" />
-
         </LinearLayout>
 
 
@@ -118,6 +117,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="221dp">
+
             <Button
                 android:id="@+id/elephant1"
                 android:layout_width="190dp"

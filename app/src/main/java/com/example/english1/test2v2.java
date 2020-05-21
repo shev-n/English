@@ -56,11 +56,11 @@ public class test2v2 extends AppCompatActivity {
                     startActivity(intent);
                 }else if (activity == 2){
                     Intent intent = new Intent(getApplicationContext(), test3v2.class);
-                    intent.putExtra("points1", points);
+                    intent.putExtra("points2", points);
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test3v3.class);
-                    intent.putExtra("points1", points);
+                    intent.putExtra("points2", points);
                     startActivity(intent);
                 }
             }

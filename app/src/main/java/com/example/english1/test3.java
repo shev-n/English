@@ -38,7 +38,6 @@ public class test3 extends AppCompatActivity {
             public void onClick(View v) {
                 int points = key.getInt("points2");
                 points=points+1;
-                System.out.println(points);
                 Intent intent = new Intent(getApplicationContext(), result.class);
                 intent.putExtra("points3", points);
                 startActivity(intent);
