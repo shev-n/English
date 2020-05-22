@@ -13,6 +13,7 @@ import java.util.Random;
 
 public class test3v3 extends AppCompatActivity {
 
+    int t3 = 0;
     int min = 0;
     int max = 3;
     int diff = max - min;
@@ -37,18 +38,31 @@ public class test3v3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int points = key.getInt("points2");
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
                 points=points+1;
+                t3 = t3+1;
+
                 if(activity == 1){
                     Intent intent = new Intent(getApplicationContext(), test4.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 2){
                     Intent intent = new Intent(getApplicationContext(), test4v2.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test4v3.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }
             }
@@ -59,17 +73,28 @@ public class test3v3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int points = key.getInt("points2");
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
                 if(activity == 1){
                     Intent intent = new Intent(getApplicationContext(), test4.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 2){
                     Intent intent = new Intent(getApplicationContext(), test4v2.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test4v3.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }
             }
@@ -79,18 +104,29 @@ public class test3v3 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
                 int points = key.getInt("points2");
                 if(activity == 1){
                     Intent intent = new Intent(getApplicationContext(), test4.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 2){
                     Intent intent = new Intent(getApplicationContext(), test4v2.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test4v3.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }
             }

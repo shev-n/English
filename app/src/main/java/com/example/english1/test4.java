@@ -10,6 +10,8 @@ import android.widget.Button;
 
 public class test4 extends AppCompatActivity {
 
+    int t4 = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,15 @@ public class test4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int points = key.getInt("points3");
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
+                int t3 = key.getInt("test3");
                 Intent intent = new Intent(getApplicationContext(), result.class);
                 intent.putExtra("points4", points);
+                intent.putExtra("test1", t1);
+                intent.putExtra("test2", t2);
+                intent.putExtra("test3", t3);
+                intent.putExtra("test4", t4);
                 startActivity(intent);
             }
         });
@@ -37,8 +46,15 @@ public class test4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int points = key.getInt("points3");
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
+                int t3 = key.getInt("test3");
                 Intent intent = new Intent(getApplicationContext(), result.class);
                 intent.putExtra("points4", points);
+                intent.putExtra("test1", t1);
+                intent.putExtra("test2", t2);
+                intent.putExtra("test3", t3);
+                intent.putExtra("test4", t4);
                 startActivity(intent);
             }
         });
@@ -48,9 +64,17 @@ public class test4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int points = key.getInt("points3");
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
+                int t3 = key.getInt("test3");
                 points=points+1;
+                t4 = t4 + 1;
                 Intent intent = new Intent(getApplicationContext(), result.class);
                 intent.putExtra("points4", points);
+                intent.putExtra("test1", t1);
+                intent.putExtra("test2", t2);
+                intent.putExtra("test3", t3);
+                intent.putExtra("test4", t4);
                 startActivity(intent);
             }
         });
@@ -60,8 +84,15 @@ public class test4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int points = key.getInt("points3");
+                int t1 = key.getInt("test1");
+                int t2 = key.getInt("test2");
+                int t3 = key.getInt("test3");
                 Intent intent = new Intent(getApplicationContext(), result.class);
                 intent.putExtra("points4", points);
+                intent.putExtra("test1", t1);
+                intent.putExtra("test2", t2);
+                intent.putExtra("test3", t3);
+                intent.putExtra("test4", t4);
                 startActivity(intent);
             }
         });
