@@ -17,7 +17,7 @@ import java.util.Random;
 public class result extends AppCompatActivity {
 
     int min = 0;
-    int max = 3;
+    int max = 5;
     int diff = max - min;
     Random random = new Random();
     int activity = random.nextInt(diff + 1);
@@ -120,6 +120,12 @@ public class result extends AppCompatActivity {
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test1v3.class);
+                    startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test1v4.class);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test1v5.class);
                     startActivity(intent);
                 }
             }

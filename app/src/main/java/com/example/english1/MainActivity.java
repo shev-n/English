@@ -3,6 +3,7 @@ package com.example.english1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     int points = 0;
     int min = 0;
-    int max = 3;
+    int max = 5;
     int diff = max - min;
     Random random = new Random();
     int activity = random.nextInt(diff + 1);
@@ -37,15 +38,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(activity == 1){
                     Intent intent = new Intent(getApplicationContext(), test1.class);
-                    intent.putExtra("points1", points);
                     startActivity(intent);
                 }else if (activity == 2){
                     Intent intent = new Intent(getApplicationContext(), test1v2.class);
-                    intent.putExtra("points1", points);
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test1v3.class);
-                    intent.putExtra("points1", points);
+                    startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test1v4.class);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test1v5.class);
                     startActivity(intent);
                 }
             }
@@ -55,19 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if(activity == 1){
-                    Intent intent = new Intent(getApplicationContext(), test1.class);
-                    intent.putExtra("points1", points);
-                    startActivity(intent);
-                }else if (activity == 2){
-                    Intent intent = new Intent(getApplicationContext(), test1v2.class);
-                    intent.putExtra("points1", points);
-                    startActivity(intent);
-                }else if (activity == 3){
-                    Intent intent = new Intent(getApplicationContext(), test1v3.class);
-                    intent.putExtra("points1", points);
-                    startActivity(intent);
-                }
             }
         });
 
@@ -86,4 +77,5 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
 
     }
+
 }

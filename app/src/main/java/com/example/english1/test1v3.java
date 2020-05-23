@@ -24,7 +24,7 @@ public class test1v3 extends AppCompatActivity {
     int t1 = 0;
     int points = 0;
     int min = 0;
-    int max = 3;
+    int max = 5;
     int diff = max - min;
     Random random = new Random();
     int activity = random.nextInt(diff + 1);
@@ -61,6 +61,16 @@ public class test1v3 extends AppCompatActivity {
                     intent.putExtra("points1", points);
                     intent.putExtra("test1", t1);
                     startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test2v4.class);
+                    intent.putExtra("points1", points);
+                    intent.putExtra("test1", t1);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test2v5.class);
+                    intent.putExtra("points1", points);
+                    intent.putExtra("test1", t1);
+                    startActivity(intent);
                 }
             }
         });
@@ -81,6 +91,16 @@ public class test1v3 extends AppCompatActivity {
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test2v3.class);
+                    intent.putExtra("points1", points);
+                    intent.putExtra("test1", t1);
+                    startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test2v4.class);
+                    intent.putExtra("points1", points);
+                    intent.putExtra("test1", t1);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test2v5.class);
                     intent.putExtra("points1", points);
                     intent.putExtra("test1", t1);
                     startActivity(intent);

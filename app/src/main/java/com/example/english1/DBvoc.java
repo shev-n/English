@@ -1,5 +1,6 @@
 package com.example.english1;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -27,7 +28,7 @@ public class DBvoc extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + "voc" + "(" + KEY_ID
-                + " integer primary key," + KEY_WORD + " text," + KEY_TRANSLATE + " voc" + ")");
+                + " integer primary key," + KEY_WORD + " text," + KEY_TRANSLATE + " text" + ")");
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

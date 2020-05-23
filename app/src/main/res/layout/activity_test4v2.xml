@@ -40,10 +40,10 @@
         android:background="#FFE7BD"
         android:fontFamily="sans-serif"
         android:gravity="center_horizontal"
-        android:text="We ____ at Literature."
+        android:text="We are ____ at Literature."
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="70sp" />
+        android:textSize="60sp" />
 
     <ImageView
         android:id="@+id/l6"
@@ -64,7 +64,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="#CDB996"
-            android:text="sing songs"
+            android:text="singing songs"
             android:textColor="#000000"
             android:textSize="20sp"/>
 
@@ -75,7 +75,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="#CDB996"
-            android:text="read and speak"
+            android:text="reading and speaking"
             android:textColor="#000000"
             android:textSize="20sp"/>
 
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="105dp"
             android:layout_weight="1"
-            android:text="paint"
+            android:text="painting"
             android:layout_margin="10dp"
             android:background="#CDB996"
             android:textColor="#000000"
@@ -103,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="105dp"
             android:layout_weight="1"
-            android:text="run and jump"
+            android:text="running and jumping"
             android:layout_margin="10dp"
             android:background="#CDB996"
             android:textColor="#000000"

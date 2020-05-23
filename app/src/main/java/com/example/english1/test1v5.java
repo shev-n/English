@@ -1,18 +1,25 @@
 package com.example.english1;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Random;
 
 
-public class test1v2 extends AppCompatActivity {
+public class test1v5 extends AppCompatActivity {
 
     int t1 = 0;
     int points = 0;
@@ -22,23 +29,22 @@ public class test1v2 extends AppCompatActivity {
     Random random = new Random();
     int activity = random.nextInt(diff + 1);
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test1v2);
+        setContentView(R.layout.activity_test1v5);
 
         if(activity == 0){
             activity = activity + 1;
         }
 
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.yes1v2);
-        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.no1v2);
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.yes1v5);
+        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.no1v5);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+
                 if(activity == 1){
                     Intent intent = new Intent(getApplicationContext(), test2.class);
                     intent.putExtra("points1", points);
@@ -72,8 +78,8 @@ public class test1v2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                    t1 = t1 + 1;
-                    points = points+1;
+                points = points+1;
+                t1 = t1 + 1;
                 if(activity == 1){
                     Intent intent = new Intent(getApplicationContext(), test2.class);
                     intent.putExtra("points1", points);

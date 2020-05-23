@@ -15,7 +15,7 @@ public class test3v3 extends AppCompatActivity {
 
     int t3 = 0;
     int min = 0;
-    int max = 3;
+    int max = 5;
     int diff = max - min;
     Random random = new Random();
     int activity = random.nextInt(diff + 1);
@@ -64,6 +64,20 @@ public class test3v3 extends AppCompatActivity {
                     intent.putExtra("test2", t2);
                     intent.putExtra("test3", t3);
                     startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test4v4.class);
+                    intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test4v5.class);
+                    intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
+                    startActivity(intent);
                 }
             }
         });
@@ -96,6 +110,20 @@ public class test3v3 extends AppCompatActivity {
                     intent.putExtra("test2", t2);
                     intent.putExtra("test3", t3);
                     startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test4v4.class);
+                    intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test4v5.class);
+                    intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
+                    startActivity(intent);
                 }
             }
         });
@@ -123,6 +151,20 @@ public class test3v3 extends AppCompatActivity {
                     startActivity(intent);
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test4v3.class);
+                    intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
+                    startActivity(intent);
+                }else if (activity == 4){
+                    Intent intent = new Intent(getApplicationContext(), test4v4.class);
+                    intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
+                    startActivity(intent);
+                }else if (activity == 5){
+                    Intent intent = new Intent(getApplicationContext(), test4v5.class);
                     intent.putExtra("points3", points);
                     intent.putExtra("test1", t1);
                     intent.putExtra("test2", t2);

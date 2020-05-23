@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".test4v5"></activity>
+        <activity android:name=".test4v4" />
+        <activity android:name=".test3v5" />
+        <activity android:name=".test3v4" />
+        <activity android:name=".test2v5" />
+        <activity android:name=".test2v4" />
+        <activity android:name=".test1v5" />
+        <activity android:name=".test1v4" />
         <activity android:name=".test4v3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,19 +24,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".test4v2" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".test4v2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
-        <activity android:name=".test4" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".test4">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity android:name=".test3v3">
             <intent-filter>

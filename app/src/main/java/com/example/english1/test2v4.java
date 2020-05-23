@@ -17,10 +17,10 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class test2 extends AppCompatActivity {
+public class test2v4 extends AppCompatActivity {
 
     int t2 = 0;
-    String ca = "computer";
+    String ca = "creativity";
     int min = 0;
     int max = 5;
     int diff = max - min;
@@ -30,7 +30,7 @@ public class test2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test2);
+        setContentView(R.layout.activity_test2v4);
 
         if(activity == 0){
             activity = activity + 1;
@@ -38,17 +38,17 @@ public class test2 extends AppCompatActivity {
 
         final Bundle key = getIntent().getExtras();
 
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2);
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.btn2v4);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                EditText ER = findViewById(R.id.er2);
+                EditText ER = findViewById(R.id.er2v4);
                 String response = ER.getText().toString().trim();
                 int points = key.getInt("points1");
                 int t1 = key.getInt("test1");
                 if(response.equals(ca)){
-                   points = points+1;
+                    points = points+1;
                     t2 = t2 + 1;
                 }else{
                     points = points+0;

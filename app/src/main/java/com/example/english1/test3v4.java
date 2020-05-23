@@ -12,7 +12,7 @@ import android.widget.Button;
 import java.util.Random;
 
 
-public class test3 extends AppCompatActivity {
+public class test3v4 extends AppCompatActivity {
 
     int t3 = 0;
     int min = 0;
@@ -24,16 +24,16 @@ public class test3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test3);
+        setContentView(R.layout.activity_test3v4);
         final Bundle key = getIntent().getExtras();
 
         if(activity == 0){
             activity = activity + 1;
         }
 
-        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.cow1);
-        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.chicken1);
-        @SuppressLint("WrongViewCast") Button b3 = findViewById(R.id.pig1);
+        @SuppressLint("WrongViewCast") Button b1 = findViewById(R.id.dog1);
+        @SuppressLint("WrongViewCast") Button b2 = findViewById(R.id.fox1);
+        @SuppressLint("WrongViewCast") Button b3 = findViewById(R.id.horse1);
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -106,6 +106,9 @@ public class test3 extends AppCompatActivity {
                 }else if (activity == 3){
                     Intent intent = new Intent(getApplicationContext(), test4v3.class);
                     intent.putExtra("points3", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    intent.putExtra("test3", t3);
                     startActivity(intent);
                 }else if (activity == 4){
                     Intent intent = new Intent(getApplicationContext(), test4v4.class);

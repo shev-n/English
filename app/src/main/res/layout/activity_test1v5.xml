@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#87CEB1"
     android:orientation="vertical"
-    tools:context=".test1v2">
+    tools:context=".test1v5">
 
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:background="#87CEB1"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
-            android:text="'See' переводится как 'Идти'?"
+            android:text="'Crown' переводится как 'Лошадь'?"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="55dp" />
@@ -45,7 +45,7 @@
             app:srcCompat="@drawable/png_line_2" />
 
         <Button
-            android:id="@+id/yes1v2"
+            android:id="@+id/yes1v5"
             android:layout_width="match_parent"
             android:layout_height="99dp"
             android:background="#FFE7BD"
@@ -76,7 +76,7 @@
             app:srcCompat="@drawable/png_line_2" />
 
         <Button
-            android:id="@+id/no1v2"
+            android:id="@+id/no1v5"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="#FFE7BD"

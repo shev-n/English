@@ -71,6 +71,18 @@ public class test2v2 extends AppCompatActivity {
                     intent.putExtra("test1", t1);
                     intent.putExtra("test2", t2);
                     startActivity(intent);
+                }else if (activity == 4) {
+                    Intent intent = new Intent(getApplicationContext(), test3v4.class);
+                    intent.putExtra("points2", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    startActivity(intent);
+                }else if (activity == 5) {
+                    Intent intent = new Intent(getApplicationContext(), test3v5.class);
+                    intent.putExtra("points2", points);
+                    intent.putExtra("test1", t1);
+                    intent.putExtra("test2", t2);
+                    startActivity(intent);
                 }
             }
         });
